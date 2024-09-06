@@ -14,15 +14,25 @@
 
 public protocol PickerStyle {}
 
-public struct PopUpButtonPickerStyle: PickerStyle {}
+public struct PopUpButtonPickerStyle: PickerStyle {
+  public init() {}
+}
 
-public struct RadioGroupPickerStyle: PickerStyle {}
+public struct RadioGroupPickerStyle: PickerStyle {
+  public init() {}
+}
 
-public struct SegmentedPickerStyle: PickerStyle {}
+public struct SegmentedPickerStyle: PickerStyle {
+  public init() {}
+}
 
-public struct WheelPickerStyle: PickerStyle {}
+public struct WheelPickerStyle: PickerStyle {
+  public init() {}
+}
 
-public struct DefaultPickerStyle: PickerStyle {}
+public struct DefaultPickerStyle: PickerStyle {
+  public init() {}
+}
 
 enum PickerStyleKey: EnvironmentKey {
   static var defaultValue: PickerStyle = DefaultPickerStyle()
